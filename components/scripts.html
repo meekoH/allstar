@@ -1,0 +1,29 @@
+<script src="./js/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="./fancyBox/jquery.fancybox.pack.js"></script>
+<script src="./js/jquery.flexslider.js"></script>
+<script src="./js/masonry.js"></script>
+<script src="./js/imagesloaded.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.footer-slider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			pauseOnAction: false,
+			pauseOnHover: true,
+			controlNav: false,
+			directionNav: false,
+			randomize: false,
+			startAt: 0
+		});
+		$(".fancy-gallery").fancybox({
+			'hideOnContentClick': true,
+			'transitionIn'	:	'fade',
+			'transitionOut'	:	'fade',
+			'autoScale' : true,
+			'titleShow': false,
+			'titlePosition' : 'inside'
+		});
+	});
+</script>
